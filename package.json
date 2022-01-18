@@ -1,7 +1,7 @@
 {
   "name": "@alm1983/bdd-jest",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Jest Wrapper Compatible with Behavior-Driven Development",
   "main": "dist/index.js",
   "types" : "dist/index.d.ts",
