@@ -1,5 +1,6 @@
 import EmptyFunction = jest.EmptyFunction;
 import FunctionLike = jest.FunctionLike;
+import ProvidesCallback = jest.ProvidesCallback;
 
 export const given = (
   // eslint-disable-next-line @typescript-eslint/ban-types
@@ -15,6 +16,7 @@ export const when = (
 
 export const then = (
   // eslint-disable-next-line @typescript-eslint/ban-types
-  name: number | string | Function | FunctionLike,
-  fn: EmptyFunction,
-) => describe(`Then ${name}.`, fn);
+  name: string,
+  fn?: ProvidesCallback,
+  timeout?: number,
+) => test(`Then ${name}.`, fn, timeout);
